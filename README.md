@@ -1,2 +1,2 @@
-# NYCU-AI-Final-Project 
-## tagAnticipaitng Accidents in Dashcam videos
+# NYCU AI Final Project 
+## Anticipaitng Accidents in Dashcam videos
