@@ -2,6 +2,6 @@
 ## Anticipaitng Accidents in Dashcam videos
 
 ## Requirements
-   tensorflow-gpu==1.14.0
-   python==3.6.2
+   tensorflow-gpu==1.14.0\n
+   python==3.6.2\n
    cudatoolkit==10.0
