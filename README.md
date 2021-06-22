@@ -10,3 +10,7 @@
 ##### Numpy
 ##### cudatoolkit
 ##### cudnn
+### Step 1 Object detection
+Clone Mask-RCNN repository.
+Put your videos into video folder.
+Run feature_extraction_2.py
