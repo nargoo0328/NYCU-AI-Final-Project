@@ -21,7 +21,6 @@ from mrcnn import visualize
 # Import COCO config
 sys.path.append(os.path.join(ROOT_DIR, "samples/coco/"))  # To find local version
 import coco
-#%matplotlib inline 
 
 # Directory to save logs and trained model
 MODEL_DIR = os.path.join(ROOT_DIR, "logs")
@@ -72,9 +71,6 @@ batch_n=1
 count=0
 for dirr in os.listdir(IMAGE_DIR):
     #training or testing
-    if dirr == "training":
-      print("HI") 
-      continue
     now_path=os.path.join(IMAGE_DIR,dirr)
     ww=os.listdir(now_path)
     ww.sort()
@@ -183,6 +179,8 @@ for dirr in os.listdir(IMAGE_DIR):
             if count==2:
                 print("Saveing batch...")
                 print("batch num: ",batch_n)
+                if not os.path.exists("/batch"):
+                    os.mkdir("batch")
                 np.savez('batch_%03d.npz' % batch_n,data=batch_data,labels=batch_labels,ID=batch_ID,det=batch_det,pair_data=batch_pair_data)
                 count=0
                 batch_num=0
