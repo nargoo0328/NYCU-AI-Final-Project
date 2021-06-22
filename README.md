@@ -14,5 +14,6 @@
 Clone Mask-RCNN repository.  
 Put your videos into video folder.  
 Run feature_extraction_2.py  
+(GPU is highly recommended for feature extraction. It took 5 mins to process one video on GTX-1080ti) 
 ### Step 2: Anticipating-Accidents
 Check Anticipating-Accidents folder
