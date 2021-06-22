@@ -181,7 +181,7 @@ for dirr in os.listdir(IMAGE_DIR):
                 print("batch num: ",batch_n)
                 if not os.path.exists("/batch"):
                     os.mkdir("batch")
-                np.savez('batch_%03d.npz' % batch_n,data=batch_data,labels=batch_labels,ID=batch_ID,det=batch_det,pair_data=batch_pair_data)
+                np.savez('batch/batch_%03d.npz' % batch_n,data=batch_data,labels=batch_labels,ID=batch_ID,det=batch_det,pair_data=batch_pair_data)
                 count=0
                 batch_num=0
                 batch_n+=1
