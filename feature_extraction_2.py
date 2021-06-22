@@ -54,7 +54,7 @@ roi_model=model.create_roi_model()
 
 #fifth block
 import cv2
-IMAGE_DIR = os.path.join(ROOT_DIR, "images")
+IMAGE_DIR = "video/"
 label=0
 pair_wise_n=100
 #batch x 100(frame) x object x4
